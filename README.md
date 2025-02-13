@@ -134,4 +134,86 @@ Total range_query time for Dict: X.XXXXXX seconds
 ![Task_1_results](assets/task_1_results.png)
 ![Task_1_graph](assets/task_1_graph.png)
 
+## Logistics Network Analysis
+
+### 1. Which terminals provide the highest flow of goods to stores?
+
+**Terminal 1** supplies goods to the following stores:
+
+- Shop 1: 15 units
+- Shop 2: 10 units
+- Shop 4: 15 units
+- Shop 5: 10 units
+- Shop 6: 5 units
+- Shop 7: 15 units
+- Shop 8: 10 units
+
+**Total flow from Terminal 1: 80 units**
+
+**Terminal 2** supplies goods to the following stores:
+
+- Shop 7: 15 units
+- Shop 8: 10 units
+- Shop 10: 20 units
+- Shop 11: 10 units
+- Shop 4: 10 units
+- Shop 5: 10 units
+- Shop 6: 5 units
+
+**Total flow from Terminal 2: 70 units**
+
+**Conclusion:** Terminal 1 provides the highest flow of goods to stores (80 units).
+
+### 2. Which routes have the lowest capacity, and how does it impact overall flow?
+
+The route **Warehouse 4 -> Shop 13** has the lowest capacity of **5 units**.
+
+**Impact on overall flow:**
+
+- This route acts as a "bottleneck" in the network, restricting the flow of goods to Shop 13.
+- As a result, **Shop 13 receives 0 units**, negatively affecting the overall network efficiency.
+- The capacity constraint prevents the network from reaching its full potential, as goods cannot reach all stores efficiently.
+
+### 3. Which stores receive the least goods, and can their supply be increased by improving specific routes?
+
+**Stores receiving the least goods:**
+
+- **Shop 3:** 0 units
+- **Shop 9:** 0 units
+- **Shop 12:** 0 units
+- **Shop 13:** 0 units
+- **Shop 14:** 0 units
+
+**Ways to increase supply:**
+
+- **Shop 3:** Increase the capacity of the route **Terminal 1 -> Warehouse 1 -> Shop 3**.
+- **Shop 9:** Increase the capacity of the routes **Terminal 1 -> Warehouse 3 -> Shop 9** or **Terminal 2 -> Warehouse 3 -> Shop 9**.
+- **Shop 12, Shop 13, and Shop 14:** Increase capacity on routes through **Warehouse 4**.
+
+**Conclusion:** Increasing the capacity of these routes will improve supply to stores receiving insufficient goods.
+
+### 4. Are there bottlenecks that can be removed to improve logistics network efficiency?
+
+**Identified bottlenecks:**
+
+- **Warehouse 4 -> Shop 13** (capacity: 5 units)
+- Routes leading to stores with 0 supply (**Shop 3, Shop 9, Shop 12, Shop 13, Shop 14**)
+
+**Solutions to remove bottlenecks:**
+
+1. **Increase capacity on weak routes:**
+   - For example, increase the capacity of **Warehouse 4 -> Shop 13** from 5 to 10 units.
+
+2. **Add alternative routes:**
+   - Introduce new connections from terminals to warehouses or from warehouses to stores to ensure additional supply channels.
+
+3. **Optimize flow distribution:**
+   - Redistribute flows between terminals and warehouses to ensure a more balanced supply to all stores.
+
+**Conclusion:** Removing bottlenecks will improve the efficiency of the logistics network and ensure better supply distribution across all stores.
+
+
+
+
 ## TASK_2
+![Task_2_results](assets/task_2_results.png)
